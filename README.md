@@ -18,5 +18,5 @@ Once you've confirmed that it meets your needs, you can figure out the most appr
 
 
 ## Licence
-Authored and maintained by Igor Tikvić.
-This project is licensed under the MIT license.
+Authored and maintained by Igor Tikvić.\
+This project is licensed under the [MIT license](https://github.com/nadago/style-guide-starter-kit/blob/main/LICENSE).
