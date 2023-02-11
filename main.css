@@ -1,0 +1,150 @@
+/**
+ * Style Guide Kit
+ * ============================================
+ * All classes must start with a namespace 'skg'
+ * which is an abbreviation for style guide kit.
+ * To avoid and minimise styling conflicts with
+ * theme heading elements SKG uses
+ * <p> element for its own headings.
+ */
+
+
+:root {
+    /* Typography variables */
+    --sgk-font-stack: "Fira Code", monospace;
+    --sgk-font-weight-light: 300;
+    --sgk-font-weight-regular: 400;
+    --sgk-font-weight-medium: 500;
+    --sgk-font-weight-semibold: 600;
+    --sgk-font-weight-bold: 700;
+
+    /* Colors */
+    --sgk-color-base: #000;
+    --sgk-color-white: #fff;
+    --sgk-color-black: #000;
+    --sgk-base-border-color: #dadce0;
+
+    /* Layout */
+    --sgk-container-max-width: 960px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+     box-sizing: inherit
+}
+
+html {
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--sgk-color-base);
+    font-family: var(--sgk-font-stack);
+    font-size: 1rem;
+    font-weight: var(--sgk-font-weight-regular);
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+}
+
+/** Common **/
+
+.sgk-container {
+    margin-inline: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 100%;
+    max-width: var(--sgk-container-max-width);
+    counter-reset: section-counter; /* Set "section-counter" to 0 */
+}
+
+.sgk-container-header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.sgk-title,
+.sgk-subtitle {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: var(--sgk-font-stack);
+    color: var(--sgk-color-base);
+}
+
+.sgk-title {
+    font-size: 2rem;
+    font-weight: var(--sgk-font-weight-semibold);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.skg-subtitle {
+    font-size: 1.125rem;
+}
+
+.sgk-section {
+    margin-bottom: 1rem;
+}
+
+.sgk-heading {
+    color: var(--sgk-color-base);
+    font-weight: var(--sgk-font-weight-semibold);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid var(--sgk-color-base);
+    font-size: 1.125rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.sgk-heading::after {
+    content: counters(section-counter, ".", decimal-leading-zero);
+    float: right;
+    counter-increment: section-counter;
+}
+
+.sgk-body {
+    margin-bottom: 3rem;
+}
+
+/* expand and collapse button container */
+
+.sgk-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3rem;
+}
+
+.sgk-button {
+    width: 10rem;
+    background-color: var(--sgk-color-white);
+    border: 2px solid var(--sgk-color-base);
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    font-family: var(--sgk-font-stack);
+    font-weight: var(--sgk-font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.sgk-button:focus,
+.sgk-button:hover {
+     background-color: var(--sgk-color-black);
+     color: var(--sgk-color-white);
+ }
