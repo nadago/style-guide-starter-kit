@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Style Guide Starter Kit</title>
+    <link rel="stylesheet" href="./main.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="sgk-container">
+    <header class="sgk-container-header">
+        <div class="sgk-title">Website Style guide</div>
+        <div class="sgk-subtitle">Reference source for theme UI components</div>
+    </header>
+
+    <!-- for functional modification check the script at the bottom  -->
+    <div class="sgk-toolbar">
+        <button id="toggleButton" class="sgk-button" data-state="collapsed">Expand all</button>
+    </div>
+
+    <!-- Branding -->
+    <details class="sgk-section">
+        <summary class="sgk-heading sgk-heading--lvl1">Introduction</summary>
+        <article class="sgk-body">
+            <p>Use this space to write a brief overview of the purpose and scope of the style guide. Try to communicate the benefits of following it and provide context for the design decisions that have been made.</p>
+            <p>Also, identify the intended audience, such as designers, developers, and content creators. Explain how to use the guide, including who to contact with questions.</p>
+            <p>Additionally, you might mention any important technical considerations, such as accessibility, responsive design, and browser compatibility as well.</p>
+        </article>
+    </details>
+    <details class="sgk-section">
+        <summary class="sgk-heading sgk-heading--lvl1">Logo</summary>
+        <article class="sgk-body">
+            <p>The logo section of the style guide should feature high-resolution images of the logo in all its variations - horizontal, vertical, and monochrome. Essential details such as the precise colors used in the logo specified using HEX and/or RGB values, the typeface and any associated typography should also be included. </p>
+            <p>Finally, be sure to outline clear and concise guidelines on the proper usage of the logo, taking into account factors such as minimum size, appropriate clear space, and suggested background colors.</p>
+        </article>
+    </details>
+
+    <!-- Color Palette -->
+    <details class="sgk-section">
+        <summary class="sgk-heading sgk-heading--lvl1">Color Palette</summary>
+        <article class="sgk-body">
+            <p>A color palette should define the complete spectrum of colors that a brand uses to establish its identity. For most use cases, this spectrum can be divided into four categories: (1) primary colors, (2) secondary colors, (3) neutrals, and (4) semantic colors. To ensure accurate reproduction, each color should be represented by its hexadecimal or RGB value.</p>
+            <p>Additionally, it is crucial to establish a naming convention for the color palette to provide a clear and consistent method of referring to the colors.</p>
+        </article>
+    </details>
+
+    <!-- Typeset -->
+    <details class="sgk-section">
+        <summary class="sgk-heading sgk-heading--lvl1">Typeset</summary>
+        <article class="sgk-body">
+            <p>Specify all typefaces used in the design, including the font family, weight, and size. It is recommended to use no more than two or three typefaces in total. For the majority of text, such as body copy, set one typeface, and the other one(s) for headlines, callouts, quotes, captions and similar elements.</p>
+            <p>Besides type scale (font, weight, size) good typography should also establish other typographic constructs like fallback options, horizontal and vertical rhythm, text color, responsiveness. A systematic approach here will help define even more design aspects such as icon sizings, margin, padding and spacing values, and general sizing of UI components.</p>
+        </article>
+    </details>
+
+    <!-- Breakpoints -->
+    <details class="sgk-section">
+        <summary class="sgk-heading sgk-heading--lvl1">Breakpoints</summary>
+        <article class="sgk-body">
+            <p>Based on the content of the website determine the breakpoints starting from the smallest screen you want to support to largest. This is the most important part of responsive design, so it's wise to use website analytics to discern the most commonly used devices from which website is accessed.</p>
+        </article>
+    </details>
+
+    <!-- Grid System & Layout -->
+    <details class="sgk-section">
+        <summary class="sgk-heading sgk-heading--lvl1">Grid System & Layout</summary>
+        <article class="sgk-body">
+            <p>The grid system should establish several key elements, including the size and shape of the container, the spacing between columns (known as the gutter space), the number of columns in the layout, the breakpoints at which the layout changes based on the size of the screen, and the margin around the edges of the container.</p>
+            <p>Closely related to grid system, layout system should specify the various ways in which content is laid out on the page, including options such as a one-column, two-column, or three-column layout, as well as variations such as a layout with a left or right sidebar. </p>
+        </article>
+    </details>
+
+    <!-- Buttons -->
+    <details class="sgk-section">
+        <summary class="sgk-heading sgk-heading--lvl1">Buttons</summary>
+        <article class="sgk-body">
+            <p>Be sure to include all types of buttons (primary, secondary, ghost, cta ...) with all possible states: focused, invalid, disabled, loading, etc.</p>
+            <p>It's also a good idea to provide guidelines for the placement of buttons, including the distance from other elements and the use of white space.</p>
+        </article>
+    </details>
+
+    <!-- Forms -->
+    <details class="sgk-section">
+        <summary class="sgk-heading sgk-heading--lvl1">Forms</summary>
+        <article class="sgk-body">
+            <p>Style guide rules for forms should include everything from the form layout (form structure) and choosing appropriate form controls to spacing between elements. They should also take into consideration positioning of labels, different states indicators (focused, disabled, invalid) error handling and validation, etc.</p>
+        </article>
+    </details>
+
+    <!-- Tables -->
+    <details class="sgk-section">
+        <summary class="sgk-heading sgk-heading--lvl1">Tables</summary>
+        <article class="sgk-body">
+            <p>Table design guidelines should encompass all aspects of table design, from headers and footers (and table captions) to cell shading. It is important to provide clear instructions on text formatting and alignment within cells and whether or not borders should be used.</p>
+            <p>Depending on expected table sizes more additional elements should also be included such as pagination, table actions, horizontal/vertical scrolling, fixed columns or rows and so on.</p>
+        </article>
+    </details>
+
+    <!-- Icon set -->
+    <details class="sgk-section">
+        <summary class="sgk-heading sgk-heading--lvl1">Imagery & iconography</summary>
+        <article class="sgk-body">
+            <p>A comprehensive set of imagery design guidelines should include all the rules for how you use images, such as image formats, size, resolution and their placement on the page. It's also advisable to provide guidance on where to source images and how to obtain the necessary permissions for using them.</p>
+            <p>A well-crafted set of iconography guidelines should define the look and feel of icons, rules for creating and using icons in different contexts, and finally a library of approved icons. To keep up with the latest trends and best UX practices try to establish your icon set as svg files instead of using icon fonts.</p>
+        </article>
+    </details>
+
+    <!-- Misc. -->
+    <details class="sgk-section">
+        <summary class="sgk-heading sgk-heading--lvl1">Misc.</summary>
+        <article class="sgk-body">
+            <p>This section serves as a catch-all for any elements that did not fit into the previous sections, such as loaders, pagination controls, breadcrumbs, notification messages, avatars, and others.</p>
+        </article>
+    </details>
+</div>
+
+<script type="text/javascript">
+    const toggle = document.getElementById('toggleButton');
+    const styleSections = document.getElementsByClassName('sgk-section');
+
+    toggle.addEventListener('click', (e) => {
+        const state = e.target.getAttribute('data-state');
+
+        if (state === 'collapsed') {
+            toggle.dataset.state = 'expanded';
+            toggle.textContent = 'Collapse all'
+            Array.from(styleSections).forEach((element) => {
+                element.setAttribute('open', '');
+            })
+        }
+
+        if (state === 'expanded') {
+            toggle.dataset.state = 'collapsed';
+            toggle.textContent = 'Expand all'
+            Array.from(styleSections).forEach((element) => {
+                element.removeAttribute('open');
+            })
+        }
+    });
+</script>
+</body>
+</html>
